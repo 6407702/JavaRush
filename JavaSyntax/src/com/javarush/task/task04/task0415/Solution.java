@@ -6,7 +6,7 @@ public class Solution {
 		// TODO Auto-generated method stub
 
 		
-		System.out.println("Тест");
+		
 	}
 
 }
