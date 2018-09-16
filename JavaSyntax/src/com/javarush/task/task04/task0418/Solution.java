@@ -12,9 +12,9 @@ public class Solution {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 		System.out.println(
-				(int) Math.min(
-						Double.parseDouble(reader.readLine()), 
-						Double.parseDouble(reader.readLine())
+				Math.min(
+						Integer.parseInt(reader.readLine()), 
+						Integer.parseInt(reader.readLine())
 						)
 				);
 
