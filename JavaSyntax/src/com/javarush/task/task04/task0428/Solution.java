@@ -16,7 +16,7 @@ public class Solution {
         int counter = 0;
 
         for (int a : arr) {
-            if (a >= 0) {
+            if (a > 0) {
                 counter++;
             }
         }
