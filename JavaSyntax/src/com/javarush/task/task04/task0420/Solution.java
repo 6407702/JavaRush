@@ -1,13 +1,28 @@
 package com.javarush.task.task04.task0420;
 
 /* 
-РЎРѕСЂС‚РёСЂРѕРІРєР° С‚СЂРµС… С‡РёСЃРµР»
+Сортировка трех чисел
+Ввести с клавиатуры три числа, и вывести их в порядке убывания.
+Выведенные числа должны быть разделены пробелом.
 */
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class Solution {
-    public static void main(String[] args) throws Exception {
-        //РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
-    }
+	public static void main(String[] args) throws Exception {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		Integer[] arr = new Integer[3];
+		arr[0] = Integer.parseInt(reader.readLine());
+		arr[1] = Integer.parseInt(reader.readLine());
+		arr[2] = Integer.parseInt(reader.readLine());
+
+		Arrays.sort(arr, Collections.reverseOrder());
+
+		for (Integer integer : arr) {
+			System.out.print(integer + " ");
+		}
+	}
 }
