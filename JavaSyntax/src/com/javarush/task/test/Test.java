@@ -1,28 +1,17 @@
 package com.javarush.task.test;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public class Test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		
-		Cat cat1 = new Cat("Vaska");
-		Cat cat2 = new Cat("Vaska");
-		System.out.println(cat1.equals(cat2));
 
-		System.out.println(cat1 == cat2);
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+		int a = Integer.parseInt(reader.readLine());
+
 	}
-	
-	static class Cat {
-		
-		String Name;
-		
-		public Cat(String Name) {
-			
-		this.Name= Name;	
-		}
-		
-	}
-	
-	
 
 }
