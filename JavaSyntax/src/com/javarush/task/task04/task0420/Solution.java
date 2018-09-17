@@ -1,0 +1,28 @@
+package com.javarush.task.task04.task0420;
+
+/* 
+—ортировка трех чисел
+¬вести с клавиатуры три числа, и вывести их в пор€дке убывани€.
+¬ыведенные числа должны быть разделены пробелом.
+*/
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Collections;
+
+public class Solution {
+	public static void main(String[] args) throws Exception {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		Integer[] arr = new Integer[3];
+		arr[0] = Integer.parseInt(reader.readLine());
+		arr[1] = Integer.parseInt(reader.readLine());
+		arr[2] = Integer.parseInt(reader.readLine());
+
+		Arrays.sort(arr, Collections.reverseOrder());
+
+		for (Integer integer : arr) {
+			System.out.print(integer + " ");
+		}
+	}
+}
